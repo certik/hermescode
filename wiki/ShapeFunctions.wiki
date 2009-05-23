@@ -1,0 +1,23 @@
+#summary Shapesets summary in hermes2d
+
+== Introduction ==
+
+The table below summarizes all shapesets in hermes2d. It's always in the from `shapeset (generator of the shapeset)`:
+
+|| || *Triangles* || *Quads* ||
+|| *H1* || shapeset_h1_beuchler.cpp, shapeset_h1_ortho.cpp || shapeset_h1_quad.cpp (gen_h1_simple_quad.cpp), shapeset_h1_eigen.cpp ||
+|| *Hcurl* || shapeset_hc_legendre.cpp (gen_hc_leg.cpp), shapeset_hc_gradleg.cpp (gen_hc_gradleg_triang.cpp) || shapeset_hc_eigen2.cpp, shapeset_hc_gradeigen.cpp (gen_hc_gradeigen.cpp) ||
+|| *Hdiv* || || shapeset_hd_legendre.cpp (gen_hdiv_leg.cpp) ||
+|| *L2* || || ||
+
+== Missing Generators ==
+
+The following shapesets in hermes2d don't have a generator in the `src/gen` directory:
+
+shapeset_h1_beuchler.cpp, shapeset_h1_ortho.cpp, shapeset_h1_eigen.cpp, shapeset_hc_eigen2.cpp
+
+== Missing Shapeses ==
+
+The following shapesets have a generator, but are not generated in hermes2d:
+
+gen_hc_gradleg.cpp
